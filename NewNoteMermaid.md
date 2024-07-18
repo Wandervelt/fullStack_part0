@@ -1,9 +1,9 @@
 ```mermaid
-  SequenceDiagram
+sequenceDiagram
     participant browser
     participant server
 
-    Note right of browser: User Writes a note and clicks enter
+    Note right of browser: User writes a note and clicks Save
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
     Note left of server: Server processes the new note
